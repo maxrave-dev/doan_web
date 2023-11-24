@@ -7,7 +7,7 @@
 				foreach ($data as  $value) {		
 		?>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 lr-slider">
+            <div class="col-xs-12 col-sm-6 col-lg-4 col-md-6 justify-content-center lr-slider">
                 <div class="lr-item">
                     <div class="item">
                         <div class="card shadow">

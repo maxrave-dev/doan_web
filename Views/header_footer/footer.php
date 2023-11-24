@@ -64,9 +64,9 @@
                             </div>
                             <div class="clearfix instagram">
                                 <ul>
-                                    <li><a href="#"><img src="public/img/footer/in1.png" alt="Instagram" /></a></li>
-                                    <li><a href="#"><img src="public/img/footer/in2.png" alt="Instagram" /></a></li>
-                                    <li><a href="#"><img src="public/img/footer/in3.png" alt="Instagram" /></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
                                 </ul>
                             </div>
                         </div>

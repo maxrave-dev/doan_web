@@ -3,10 +3,7 @@
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-  <div class="sidebar-brand-icon rotate-n-15">
-    <i class="fa-solid fa-user-circle"></i>
-  </div>
-  <div class="sidebar-brand-text mx-3">Max<sup>phone</sup></div>
+  <div class="sidebar-brand-text mx-3"><img src="/public/img/logo.png" alt="Logo"></div>
 </a>
 
 <!-- Divider -->
