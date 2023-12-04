@@ -113,42 +113,6 @@
                         } else {
                             echo 'info-reviews moreinfo tab-pane container in active';
                         } ?>" id="reviews">
-                    <div class="about-author">
-                        <!-- comments -->
-                        <div class="post-comments">
-                            <!-- comment -->
-                            <div class="fb-comments" data-href="https://dxdbloger.000webhostapp.com?act=detail&id=<?= $data['MaSP'] ?>" data-numposts="5" data-width=""></div>
-                            <!-- /comment -->
-                        </div>
-                        <!-- /comments -->
-                    </div>
-                    <hr />
-                    <div class="your-rating log-title">
-                        <h3>Góp ý :</h3>
-                    </div>
-                    <div class="custom-input">
-                        <form action="" method="post">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="input-mail">
-                                        <span>Subject</span>
-                                        <input  type="text" name="subject">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="custom-mess">
-                                    <textarea  name="contents" placeholder="Contents"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="submit-text">
-                                    <input   type="submit" name="submit">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -169,8 +133,8 @@
                             <div class="product-f">
                                 <a href="?act=detail&id=<?= $row['MaSP'] ?>"><img src="public/<?= $row['HinhAnh1'] ?>" alt="Product Title" class="img-products" /></a>
                                 <div class="actions-btn">
-                                    <a href="?act=detail&id=<?= $row['MaSP'] ?>"><i class="mdi mdi-cart"></i></a>
-                                    <a href="" data-toggle="modal" ><i class="mdi mdi-eye"></i></a>
+                                    <a href="?act=detail&id=<?= $row['MaSP'] ?>"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="" data-toggle="modal" ><i class="fa fa-eye"></i></a>
                                 </div>
                             </div>
                             <div class="product-dsc">
