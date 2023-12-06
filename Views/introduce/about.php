@@ -34,6 +34,7 @@
 							<li>Nguyễn Đức Tuấn Minh</li>
 							<li>Lê Bá Kha</li>
 							<li>Trần Thành Đạt</li>
+                            <li>Thân Trọng Đức</li>
 						</ol>
 						<p>DH47SE002 - UEH 2023</p>
 					</div>

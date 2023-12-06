@@ -21,26 +21,34 @@
         <div class="row">
             <div class="col-12 col-lg-8 product-detail product-description">
                 <div class="row">
-                    <div class="slider-container">
-                        <div class="slider-wrapper">
-                            <?php if ($data['HinhAnh1'] != null) { ?>
-                                <div class="slide">
-                                    <img src="public/<?= $data['HinhAnh1'] ?>" alt="Slide 1">
-                                </div>
-                            <?php } ?>
-                            <?php if ($data['HinhAnh2'] != null) { ?>
-                                <div class="slide">
-                                    <img src="public/<?= $data['HinhAnh2'] ?>" alt="Slide 2">
-                                </div>
-                            <?php } ?>
-                            <?php if ($data['HinhAnh3'] != null) { ?>
-                                <div class="slide">
-                                    <img src="public/<?= $data['HinhAnh3'] ?>" alt="Slide 3">
-                                </div>
-                            <?php } ?>
+                    <div class="slider-container pb-5">
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php if ($data['HinhAnh1'] != null) { ?>
+                                    <div class="carousel-item active slide py-2 px-2" data-bs-interval="2000">
+                                        <img src="public/<?= $data['HinhAnh1'] ?>" class="d-block w-50 mx-auto" alt="...">
+                                    </div>
+                                <?php } ?>
+                                   <?php if ($data['HinhAnh2'] != null) { ?>
+                                        <div class="carousel-item slide py-2 px-2" data-bs-interval="2000">
+                                            <img src="public/<?= $data['HinhAnh2'] ?>" class="d-block w-50 mx-auto" alt="...">
+                                        </div>
+                                    <?php } ?>
+                                    <?php if ($data['HinhAnh3'] != null) { ?>
+                                        <div class="carousel-item slide py-2 px-2" data-bs-interval="2000">
+                                            <img src="public/<?= $data['HinhAnh3'] ?>" class="d-block w-50 mx-auto" alt="...">
+                                        </div>
+                                    <?php } ?>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-
-                        <div class="thumbnail-container" id="thumbnail-container"></div>
                     </div>
                 </div>
                 <div class="row center-text margin-text-title">
@@ -156,25 +164,4 @@
 <?php
 require_once("Views/quickview.php")
 ?>
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId: '2652621865018691',
-            xfbml: true,
-            version: 'v7.0'
-        });
-        FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 <!-- quick view end -->

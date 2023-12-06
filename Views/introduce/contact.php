@@ -21,15 +21,12 @@
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="googleMap-info">
-					<div id="googleMap"></div>
-					<div class="map-info">
-						<p><strong>Maxphone</strong></p>
-					</div>
+				<div class="map mb-3">
+					<div id="map"></div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row pt-5">
 			<div class="col-sm-10 col-text-center">
 				<div class="contact-details">
 					<div class="row">
@@ -59,30 +56,31 @@
 	</div>
 </div>
 <!-- contact content section end -->
-<!-- Google Map JS -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--OSM-->
+<script src="/public/leaflet/leaflet-src.js"></script>
 <script>
-	function initialize() {
-	
-		var mapOptions = {
-		zoom: 17,
-		hue: '#E9E5DC',
-		scrollwheel: false,
-		mapTypeId:google.maps.MapTypeId.TERRAIN,
-		center: new google.maps.LatLng(10.761180328757678, 106.66853262711342)
-		};
+    // Where you want to render the map.
+    var element = document.getElementById('map');
 
-		var map = new google.maps.Map(document.getElementById('googleMap'),
-			mapOptions);
+    // Create Leaflet map on map element.
+    var map = L.map(element);
 
+    // Add OSM tile layer to the Leaflet map.
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-		var marker = new google.maps.Marker({
-		position: map.getCenter(),
-		icon: 'public/img/map-marker.png',
-		map: map
-		});
+    // Target's GPS coordinates.
+    var target = L.latLng('10.761180328757678', '106.66853262711342');
 
-	}
+    // Set map's center to target with zoom 14.
+    map.setView(target, 14);
+    var myIcon = L.icon({
+        iconUrl: '/public/img/map-marker.png',
+        iconSize: [30, 55],
+        iconAnchor: [0, 0],
+    });
 
-	google.maps.event.addDomListener(window, 'load', initialize);
+    // Place a marker on the same location.
+    L.marker(target, {icon: myIcon}).addTo(map);
 </script>

@@ -1,3 +1,4 @@
+
 var $grid = $('.collection-list').isotope({
 	// options
 });
@@ -75,20 +76,6 @@ loopSlide();
 	$('.color-select > span').on('click', function () {
 		$('.color-select > span').toggleClass('outline');
 		$(this).addClass("outline").siblings().removeClass("outline");
-	});
-	/*----------------------------
-	 nivoSlider active
-	------------------------------ */
-	$('#mainSlider').nivoSlider({
-		directionNav: true,
-		animSpeed: 500,
-		effect: 'random',
-		slices: 18,
-		pauseTime: 5000,
-		pauseOnHover: false,
-		controlNav: true,
-		prevText: '<i class="mdi mdi-chevron-left"></i>',
-		nextText: '<i class="mdi mdi-chevron-right"></i>'
 	});
 	/*----------------------------
 	 plus-minus-button

@@ -886,7 +886,7 @@ header.header-one {
 	height: 40px;
 }
 .lr-slider {
-	margin-top: 60px;
+	margin-top: 20px;
 }
 .owl-next {
 	position: absolute;
@@ -923,11 +923,12 @@ header.header-one {
 	position: relative;
 }
 .lr-slider .item .img {
-	height: 330px;
+	height: 250px;
 	text-align: center;
 	margin: 0 auto;
 }
 .lr-slider .info {
+	height: 60px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -2266,21 +2267,9 @@ select:focus{outline:none!important;border-color:transparent;border:0;}
 /*-------------------------------------
 [ 7. Contact page ]
 ---------------------------------------*/
-.googleMap-info,.contact-details{position:relative;}
-#googleMap{height:480px;}
-.map-info {
-	left: 50%;
-	margin-left: -42px;
-	position: absolute;
-	top: 38%;
-}
-.map-info strong {
-	text-transform: uppercase;
-	display: block;
-	font-weight: 800;
-	color: #fe5858;
-	font-size: 16px;
-}
+.map,.contact-details{position:relative;}
+#map{height:400px;}
+
 .contact-details {
     margin-bottom: -80px;
     padding: 60px 0;
