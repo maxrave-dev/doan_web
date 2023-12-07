@@ -33,7 +33,7 @@
             $data_nguoidung = $this->login_model->tk_nguoidung(1);
 
             $data_nhanvien = $this->login_model->tk_nguoidung(3);
-            require_once("MVC/Views/Admin/index.php");
+            require_once("MVC/Views/admin/index.php");
         }
         // public function logout()
         // {

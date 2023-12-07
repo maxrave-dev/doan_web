@@ -32,7 +32,7 @@
                                                 <li><a href="?act=taikhoan&xuli=dangxuat">Đăng xuất</a></li>
                                                 <?php
                                                 if(isset($_SESSION['isLogin_Admin']) || isset($_SESSION['isLogin_Nhanvien'])){ ?>
-                                                    <li><a href="admin/?mod=login">Trang quản lý</a></li>
+                                                    <li><a href="Admin/?mod=login">Trang quản lý</a></li>
                                                 <?php }}else{ ?>
                                                 <li><b>Khách hàng</b></li>
                                                 <li><a href="?act=taikhoan">Đăng nhập</a></li>
