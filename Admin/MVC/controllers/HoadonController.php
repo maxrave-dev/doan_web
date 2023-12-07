@@ -19,7 +19,7 @@ class HoaDonController
         } else {
             $data = $this->hoadon_model->All();
         }
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
     }
     function xetduyet()
     {
@@ -39,6 +39,6 @@ class HoaDonController
     {
         $id = isset($_GET['id']) ? $_GET['id'] : 1;
         $data = $this->hoadon_model->chitiethoadon($id);
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
     }
 }

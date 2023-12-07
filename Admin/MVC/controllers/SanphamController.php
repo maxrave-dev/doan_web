@@ -10,14 +10,14 @@ class SanphamController
     public function list()
     {
         $data = $this->sanpham_model->All();
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         // require_once("MVC/Views/posts/list.php");
     }
     public function detail()
     {
         $id = isset($_GET['id']) ? $_GET['id'] : 1;
         $data = $this->sanpham_model->find($id);
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/posts/detail.php");
     }
     public function add()
@@ -25,7 +25,7 @@ class SanphamController
         $data_km = $this->sanpham_model->khuyenmai();
         $data_lsp = $this->sanpham_model->loaisp();
         $data_dm = $this->sanpham_model->danhmuc();
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/posts/add.php");
     }
     public function store()
@@ -108,7 +108,7 @@ class SanphamController
         $data_lsp = $this->sanpham_model->loaisp();
         $data_dm = $this->sanpham_model->danhmuc();
         $data = $this->sanpham_model->find($id);
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/posts/edit.php");
     }
     public function update()

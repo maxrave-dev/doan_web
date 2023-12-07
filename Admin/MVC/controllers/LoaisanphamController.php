@@ -12,14 +12,14 @@ class LoaisanphamController
 	{
 		$data = array();
 		$data = $this->loaisanpham_model->All(); 
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/list.php');
 	}
 
 	public function add()
 	{
 		$data = $this->loaisanpham_model->danhmuc();
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/add.php');
 	}
 	public function store()
@@ -53,7 +53,7 @@ class LoaisanphamController
 	{
 		$id = isset($_GET['id']) ? $_GET['id'] : 5;
 		$data = $this->loaisanpham_model->find($id);
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/detail.php');
 	}
 	public function delete()
@@ -69,7 +69,7 @@ class LoaisanphamController
 
 		$data = $this->loaisanpham_model->danhmuc();
 
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/edit.php');
 	}
 	public function update()

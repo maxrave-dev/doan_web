@@ -10,19 +10,19 @@ class NguoiDungController
     public function list()
     {
         $data = $this->nguoidung_model->All();
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/authors/list.php");
     }
     public function detail()
     {
         $id = isset($_GET['id']) ? $_GET['id'] : 1;
         $data = $this->nguoidung_model->find($id);
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/authors/detail.php");
     }
     public function add()
     {
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/authors/add.php");
     }
     public function store()
@@ -56,7 +56,7 @@ class NguoiDungController
     {
         $id = isset($_GET['id']) ? $_GET['id'] : 1;
         $data = $this->nguoidung_model->find($id);
-        require_once("MVC/Views/Admin/index.php");
+        require_once("MVC/Views/admin/index.php");
         //require_once("MVC/Views/authors/edit.php");
     }
     public function update()

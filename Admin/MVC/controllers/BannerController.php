@@ -12,13 +12,13 @@ class BannerController
 	{
 		$data = array();
 		$data = $this->banner_model->All(); 
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/list.php');
 	}
 
 	public function add()
 	{
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/add.php');
 	}
 	public function store()
@@ -50,7 +50,7 @@ class BannerController
 	{
 		$id = isset($_GET['id']) ? $_GET['id'] : 5;
 		$data = $this->banner_model->find($id);
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/detail.php');
 	}
 	public function delete()
@@ -63,7 +63,7 @@ class BannerController
 	{
 		$id = isset($_GET['id']) ? $_GET['id'] : 1;
 		$data = $this->banner_model->find($id);
-		require_once("MVC/Views/Admin/index.php");
+		require_once("MVC/Views/admin/index.php");
 		//require_once('MVC/views/categories/edit.php');
 	}
 	public function update()
