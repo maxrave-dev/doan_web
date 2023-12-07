@@ -1,4 +1,7 @@
 # Maxphone
+> This branch "heroku" was created for deploying to Heroku. It was changed for compatibility with Linux server (Fix case sensitive) <br/>
+> Demo URL: [Maxphone on Heroku](https://maxphone-0d7ff79025d7.herokuapp.com/)
+
 A simple e-commerce website for selling phones in PHP
 
 > **Warning**
