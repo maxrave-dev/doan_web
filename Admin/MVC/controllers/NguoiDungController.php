@@ -1,5 +1,5 @@
 <?php
-require_once("MVC/models/nguoidung.php");
+require_once("MVC/Models/nguoidung.php");
 class NguoiDungController
 {
     var $nguoidung_model;

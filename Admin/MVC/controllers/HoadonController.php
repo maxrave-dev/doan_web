@@ -1,5 +1,5 @@
 <?php
-require_once("MVC/models/hoadon.php");
+require_once("MVC/Models/hoadon.php");
 class HoaDonController
 {
     var $hoadon_model;
