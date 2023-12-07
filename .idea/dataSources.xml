@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/shopphone</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="bgjvxnm3vmpseadd@ltnya0pnki2ck9w8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com" uuid="4e7f3f9e-0904-43ab-980e-06681d427c32">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://ltnya0pnki2ck9w8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/bgjvxnm3vmpseadd</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
