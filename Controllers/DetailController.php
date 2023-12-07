@@ -1,5 +1,5 @@
 <?php
-require_once("Models/Detail.php");
+require_once("Models/detail.php");
 class DetailController
 {
     var $detail_model;
